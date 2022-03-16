@@ -109,7 +109,7 @@ export default function ScrollViewAnimatedHeader() {
                 <Animated.Text
                     onTextLayout={e => setTextWidth(e.nativeEvent.lines[0].width)}
                     style={[
-                        styles.name,
+                        styles.name, 
                         { transform: [{ translateX: translateName }, { scale: scaleName }] },
                     ]}>
                         <Text style={styles.NomeHeader}>Senhor Stark</Text>
@@ -204,8 +204,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         paddingVertical: 10,
         position: "absolute",
-        width: 50,
-        height: 50,
+        width: 60,
+        height: 60,
         bottom: 5,
         right: 5,
         borderRadius: 50,
@@ -220,6 +220,7 @@ const styles = StyleSheet.create({
     BtnText:{
         color: "#fff",
         fontSize: 22,
+        top: 5,
     }
 });
 
